@@ -33,7 +33,7 @@ pub fn apply_patch_with(options: Options, source: Vec<u8>, patch: &[u8]) -> Resu
     }
 
     let mut target = source;
-    target.resize(p.source_size.max(p.target_size) as _, 0);
+    target.resize(p.source_size.max(p.target_size), 0);
 
     it.fold(0, |write_offset, it| {
         xor_slice(&mut target[write_offset + it.take..], it.xor);
