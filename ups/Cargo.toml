@@ -1,0 +1,9 @@
+[package]
+name = "ups"
+edition.workspace = true
+version.workspace = true
+authors.workspace = true
+
+[dependencies]
+crc = "3.2.1"
+thiserror = "1.0.63"
