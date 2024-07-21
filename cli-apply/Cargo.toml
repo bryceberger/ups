@@ -1,9 +1,9 @@
 [package]
-name = "cli"
+name = "ups-apply"
 edition.workspace = true
 version.workspace = true
 authors.workspace = true
 
 [dependencies]
 clap = { version = "4.5.9", features = ["derive"] }
-ups = { version = "0.0.1", path = "../ups" }
+ups.path = "../ups" 
