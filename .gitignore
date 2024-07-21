@@ -2,3 +2,4 @@ target/
 .direnv
 .cargo
 out/
+result
