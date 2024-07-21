@@ -27,7 +27,11 @@
         rustc = toolchain;
       };
 
-      ups-apply = naersk'.buildPackage {src = ./.;};
+      ups-apply = naersk'.buildPackage {
+        name = "ups-apply";
+        src = ./.;
+        meta.mainProgram = "ups-apply";
+      };
     in {
       packages = {
         inherit ups-apply;
